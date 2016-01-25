@@ -394,11 +394,11 @@ typedef NS_OPTIONS(NSUInteger, NYTAdCategory) {
 
 方法、变量、类的命名一定要尽量用词准确，符合英语习惯，以免混淆。尽量不要出现拼音命名，单词缩写，指牛为马，以及中文命名等尴尬状况。同时也要注意时态、语态，从而更准确描述从属关系。
 
-**推荐： **
+**推荐：**
 
 * `backButtonTouched:`/ `isCancelled` 和 `studentCollection` / `studentArray`
 
-** 反对： **
+**反对：**
 
 * `backBtnClicked:` / `isCancel` 和 `stuArr`
 
