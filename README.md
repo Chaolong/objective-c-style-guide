@@ -1,6 +1,6 @@
-# 纽约时报 移动团队 Objective-C 规范指南
+# Kingsun 移动团队 Objective-C 规范指南
 
-这份规范指南概括了纽约时报 iOS 团队的代码约定。
+这份规范指南概括了Kingsun报 iOS 团队的代码约定。
 
 ## 介绍
 
@@ -39,10 +39,12 @@
 * [位掩码](#位掩码)
 * [私有属性](#私有属性)
 * [图片命名](#图片命名)
+* [用词](#用词)
 * [布尔](#布尔)
 * [单例](#单例)
 * [导入](#导入)
 * [Xcode 工程](#Xcode-工程)
+* [代码量](#代码量)
 
 ## 点语法
 
@@ -201,7 +203,7 @@ UIButton *settingsButton;
 ```objc
 UIButton *setBut;
 ```
-类名和常量应该始终使用三个字母的前缀（例如 `NYT`），但 Core Data 实体名称可以省略。为了代码清晰，常量应该使用相关类的名字作为前缀并使用驼峰命名法。
+类名和常量应该始终使用三个字母的前缀（例如 `KS`），但 Core Data 实体名称可以省略。为了代码清晰，常量应该使用相关类的名字作为前缀并使用驼峰命名法。
 
 **推荐：**
 
@@ -388,6 +390,18 @@ typedef NS_OPTIONS(NSUInteger, NYTAdCategory) {
 
 图片目录中被用于类似目的的图片应归入各自的组中。
 
+## 用词
+
+方法、变量、类的命名一定要尽量用词准确，符合英语习惯，以免混淆。尽量不要出现拼音命名，单词缩写，指牛为马，以及中文命名等尴尬状况。同时也要注意时态、语态，从而更准确描述从属关系。
+
+**推荐： **
+
+* `backButtonTouched:`/ `isCancelled` 和 `studentCollection` / `studentArray`
+
+** 反对： **
+
+* `backBtnClicked:` / `isCancel` 和 `stuArr`
+
 
 ## 布尔
 
@@ -490,6 +504,13 @@ if (isAwesome == YES) // 永远别这么做
 [Xcode-project_1]:http://boredzo.org/blog/archives/2009-11-07/warnings
 
 [Xcode-project_2]:http://clang.llvm.org/docs/UsersManual.html#controlling-diagnostics-via-pragmas
+
+## 代码量
+为了保持代码的可读性，需要对方法以及类的行数作一定要求。
+
+**建议： **
+* `方法尽量不要超过100行`
+* `类尽量不要超过1000行`
 
 
 # 其他 Objective-C 风格指南
