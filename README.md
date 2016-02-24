@@ -354,11 +354,11 @@ typedef NS_ENUM(NSInteger, NYTAdRequestState) {
 **举例：**
 
 ```objc
-typedef NS_OPTIONS(NSUInteger, NYTAdCategory) {
-    NYTAdCategoryAutos      = 1 << 0,
-    NYTAdCategoryJobs       = 1 << 1,
-    NYTAdCategoryRealState  = 1 << 2,
-    NYTAdCategoryTechnology = 1 << 3
+typedef NS_OPTIONS(NSUInteger, KSAdCategory) {
+    KSAdCategoryAutos      = 1 << 0,
+    KSAdCategoryJobs       = 1 << 1,
+    KSAdCategoryRealState  = 1 << 2,
+    KSAdCategoryTechnology = 1 << 3
 };
 ```
 
@@ -370,7 +370,7 @@ typedef NS_OPTIONS(NSUInteger, NYTAdCategory) {
 **推荐：**
 
 ```objc
-@interface NYTAdvertisement ()
+@interface KSAdvertisement ()
 
 @property (nonatomic, strong) GADBannerView *googleAdView;
 @property (nonatomic, strong) ADBannerView *iAdView;
@@ -396,7 +396,7 @@ typedef NS_OPTIONS(NSUInteger, NYTAdCategory) {
 
 **推荐：**
 
-* `backButtonTouched:`/ `isCancelled` 和 `studentCollection` / `studentArray`
+* `backButtonTouched:`/ `cancelled` 和 `studentCollection` / `studentArray`
 
 **反对：**
 
