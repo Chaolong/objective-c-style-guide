@@ -162,7 +162,7 @@ if (error) {
 **推荐：**
 
 ```objc
-@interface NYTSection: NSObject
+@interface KSSection: NSObject
 
 @property (nonatomic) NSString *headline;
 
@@ -172,7 +172,7 @@ if (error) {
 **反对：**
 
 ```objc
-@interface NYTSection : NSObject {
+@interface KSSection : NSObject {
     NSString *headline;
 }
 ```
@@ -208,7 +208,7 @@ UIButton *setBut;
 **推荐：**
 
 ```objc
-static const NSTimeInterval NYTArticleViewControllerNavigationFadeAnimationDuration = 0.3;
+static const NSTimeInterval KSArticleViewControllerNavigationFadeAnimationDuration = 0.3;
 ```
 
 **反对：**
@@ -341,9 +341,9 @@ static const CGFloat NYTImageThumbnailHeight = 50.0;
 **推荐：**
 
 ```objc
-typedef NS_ENUM(NSInteger, NYTAdRequestState) {
-    NYTAdRequestStateInactive,
-    NYTAdRequestStateLoading
+typedef NS_ENUM(NSInteger, KSAdRequestState) {
+    KSAdRequestStateInactive,
+    KSAdRequestStateLoading
 };
 ```
 
